@@ -1,14 +1,15 @@
 import java.util.ArrayList;
 
-public class SuperHero implements HabilitiesCRUD{
+public class SuperHero extends Persona implements HabilitiesCRUD{
     private ArrayList<String> habilities = new ArrayList<>();
 
-
-    public SuperHero() {
+    public SuperHero(String name, int age, float height) {
+        super(name, age, height);
     }
 
-    public SuperHero(ArrayList<String> habilidades) {
-        this.habilities = habilidades;
+    @Override
+    public void useHabilities() {
+        System.out.println(getName() + " is using super powers!");
     }
 
     @Override

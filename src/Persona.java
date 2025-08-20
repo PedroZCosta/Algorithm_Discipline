@@ -1,4 +1,4 @@
-public class Persona extends SuperHero {
+public class Persona {
     private String name;
     private Integer age;
     private Float height;
@@ -12,10 +12,14 @@ public class Persona extends SuperHero {
         this.height = altura;
     }
 
+    public void useHabilities() {
+        System.out.println("This character has no special abilities.");
+    }
+
     public void showPersona(){
         System.out.printf("Name: " + getName());
-        System.out.printf("Age: " + getAge());
-        System.out.printf("Height" + getHeight());
+        System.out.printf("\nAge: " + getAge());
+        System.out.printf("\nHeight" + getHeight());
 
     }
 
